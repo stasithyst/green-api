@@ -1,0 +1,55 @@
+@use 'variables' as *;
+
+.composer {
+  flex-shrink: 0;
+  padding: 8px 16px;
+  background: $wa-panel;
+
+  &__field {
+    display: flex;
+    gap: 8px;
+    padding: 9px 12px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0.5px 0.5px $shadow-soft;
+  }
+
+  &__input {
+    flex: 1;
+    min-width: 0;
+    border: none;
+    outline: none;
+    resize: none;
+    padding: 0;
+    background: transparent;
+    color: $wa-text;
+    font-size: 15px;
+    line-height: 1.42;
+    max-height: 120px;
+    overflow-y: auto;
+  }
+
+  &__send {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    border: none;
+    border-radius: 50%;
+    background: $wa-green;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.15s;
+
+    &:hover:not(:disabled) {
+      background: $wa-green-light;
+    }
+
+    &:disabled {
+      background: $wa-green-disabled;
+      cursor: not-allowed;
+    }
+  }
+}

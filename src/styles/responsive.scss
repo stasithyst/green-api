@@ -1,0 +1,34 @@
+@use 'variables' as *;
+
+@media (max-width: 1000px) {
+  .sidebar {
+    width: $sidebar-width-md;
+  }
+
+  .bubble {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 760px) {
+  .sidebar {
+    width: 100%;
+    border-right: none;
+  }
+
+  .app--chat-open .sidebar {
+    display: none;
+  }
+
+  .app--chat-open .chat {
+    display: flex;
+  }
+
+  .app--chat-open .chat-header__back {
+    display: flex;
+  }
+
+  .messages {
+    padding: 10px 12px 8px;
+  }
+}

@@ -1,0 +1,31 @@
+@use 'variables' as *;
+
+.app {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $wa-dark;
+  position: relative;
+
+  &__frame {
+    width: 100%;
+    max-width: 1600px;
+    height: 100%;
+    display: flex;
+    background: #fff;
+    box-shadow: 0 0 24px rgba($ink, 0.4);
+  }
+}
+
+@media (min-width: 1000px) and (min-height: 720px) {
+  .app {
+    padding: 18px;
+  }
+
+  .app__frame {
+    height: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,119 @@
+@use 'variables' as *;
+
+.field {
+  display: block;
+  margin-bottom: 16px;
+
+  &__label {
+    display: block;
+    font-size: 12.5px;
+    color: $wa-text-subtle;
+    margin-bottom: 6px;
+  }
+
+  &__input {
+    width: 100%;
+    height: 42px;
+    padding: 0 12px;
+    border: 1px solid #d1d7db;
+    border-radius: 4px;
+    background: $wa-panel;
+    color: $wa-text;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.15s, background 0.15s;
+
+    &:focus {
+      border-color: $wa-green;
+      background: #fff;
+    }
+  }
+}
+
+.btn {
+  height: 36px;
+  padding: 0 18px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+
+  &--primary {
+    background: $wa-green;
+    color: #fff;
+
+    &:disabled {
+      background: $wa-green-soft;
+      cursor: not-allowed;
+    }
+  }
+
+  &--ghost {
+    background: transparent;
+    color: $wa-green;
+  }
+}
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: $overlay;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  padding: 16px;
+}
+
+.modal {
+  width: 460px;
+  max-width: 100%;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 12px 40px $shadow-modal;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 20px 6px;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  &__close {
+    border: none;
+    background: transparent;
+    font-size: 26px;
+    line-height: 1;
+    color: $wa-text-subtle;
+    cursor: pointer;
+  }
+
+  &__body {
+    padding: 8px 20px 20px;
+  }
+
+  &__hint {
+    margin: 0;
+    font-size: 12.5px;
+    line-height: 1.5;
+    color: $wa-text-muted;
+
+    &--error {
+      color: $wa-red;
+      margin-top: 8px;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-top: 22px;
+  }
+}

@@ -1,0 +1,92 @@
+@use 'variables' as *;
+
+.login {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: $wa-panel;
+
+  &__card {
+    width: 440px;
+    max-width: 100%;
+    background: #fff;
+    border-radius: 8px;
+    padding: 34px 36px 30px;
+    box-shadow: 0 2px 12px $shadow-card;
+  }
+
+  &__logo {
+    color: $wa-brand;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 14px;
+  }
+
+  &__title {
+    margin: 0 0 4px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 500;
+  }
+
+  &__subtitle {
+    margin: 0 0 26px;
+    text-align: center;
+    font-size: 14px;
+    color: $wa-text-muted;
+  }
+
+  &__error {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+    margin-bottom: 16px;
+    padding: 10px 12px;
+    border-radius: 6px;
+    background: #fde7e9;
+    color: #a10b28;
+    font-size: 13px;
+    line-height: 1.45;
+
+    svg {
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+  }
+
+  &__submit {
+    width: 100%;
+    height: 44px;
+    border: none;
+    border-radius: 4px;
+    background: $wa-green;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+
+    &:disabled {
+      background: $wa-green-soft;
+      cursor: not-allowed;
+    }
+  }
+
+  &__hint {
+    margin: 22px 0 0;
+    font-size: 12px;
+    line-height: 1.55;
+    color: $wa-text-muted;
+
+    a {
+      color: $wa-green;
+    }
+
+    code {
+      padding: 1px 5px;
+      border-radius: 3px;
+      background: $wa-panel;
+      font-size: 11.5px;
+    }
+  }
+}

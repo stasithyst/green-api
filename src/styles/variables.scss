@@ -1,0 +1,26 @@
+$wa-green: #00a884;
+$wa-green-light: #06cf9c;
+$wa-green-disabled: #a7d9cb;
+$wa-green-soft: #9ad8c6;
+$wa-bubble-out: #d9fdd3;
+$wa-panel: #f0f2f5;
+$wa-border: #e9edef;
+$wa-text: #111b21;
+$wa-text-muted: #667781;
+$wa-text-subtle: #54656f;
+$wa-blue: #53bdeb;
+$wa-red: #ea4335;
+$wa-dark: #0b141a;
+$wa-brand: #25d366;
+
+$sidebar-width: clamp(300px, 30%, 440px);
+$sidebar-width-md: clamp(280px, 42%, 380px);
+$header-height: 60px;
+
+$ink: $wa-dark;
+$shadow-soft: rgba($ink, 0.13);
+$shadow-card: rgba($ink, 0.14);
+$shadow-modal: rgba($ink, 0.45);
+$overlay: rgba($ink, 0.55);
+$hover: rgba($ink, 0.08);
+$scroll-thumb: rgba($ink, 0.2);
