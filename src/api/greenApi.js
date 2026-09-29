@@ -106,7 +106,6 @@ export function createGreenApi({ idInstance, apiTokenInstance, baseUrl = DEFAULT
     return (data && data.stateInstance) || null;
   }
 
-  /** Пробуждение инстанса из спящего режима — без него входящие не приходят. */
   async function activateInstance() {
     const data = await request('POST', methodUrl('activateInstance'));
     return (data && data.stateInstance) || null;

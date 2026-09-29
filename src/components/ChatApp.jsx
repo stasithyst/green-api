@@ -85,7 +85,6 @@ export default function ChatApp({ api, credentials, onLogout }) {
     setPollingError(error ? error.message || 'Ошибка получения уведомлений.' : '');
   }, []);
 
-  // Реальное состояние инстанса (на случай сна/разлогина) и пробуждение при необходимости
   const refreshInstanceState = useCallback(async () => {
     try {
       let current = await api.getStateInstance();
